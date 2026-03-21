@@ -711,9 +711,6 @@ require('lazy').setup({
     'saghen/blink.cmp',
     event = 'VimEnter',
     version = '1.*',
-    keys = {
-      { 'Tab', false },
-    },
     dependencies = {
       -- Snippet Engine
       {
@@ -769,6 +766,7 @@ require('lazy').setup({
 
         -- For more advanced Luasnip keymaps (e.g. selecting choice nodes, expansion) see:
         --    https://github.com/L3MON4D3/LuaSnip?tab=readme-ov-file#keymaps
+	['<tab>'] = false,
       },
 
       appearance = {
